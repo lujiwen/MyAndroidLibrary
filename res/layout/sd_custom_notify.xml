@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/sd_ic_dialog_boarder" >
+    
+<RelativeLayout
+    android:id="@+id/headerView"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/DimGray"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true">
+
+ 
+  <ImageView
+        android:id="@+id/closeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@color/Black"
+        android:visibility="gone"
+        android:src="@drawable/sd_icon_dialog_close" />
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/headerView"
+        android:padding="20dip"
+        android:background="@color/White" >
+  
+       <ImageView
+        android:id="@+id/imageMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/sd_icon_notify_toastshow" />
+
+        <TextView
+            android:id="@+id/textViewShowMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imageMsg"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:scrollHorizontally="true"
+            android:textColor="@color/MidnightBlue"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    </RelativeLayout>
+
+</RelativeLayout>

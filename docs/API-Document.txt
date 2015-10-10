@@ -1,0 +1,33 @@
+API文档：
+SDToast：extends Toast
+	public void setGravity(int gravity,int xoffset,int yoffset)
+	设置Toast位置；
+	
+	public static Toast makeText(final Context context, CharSequence text, int duration)
+	设置文字；
+
+RemoteXml：
+	HashMap<String,String> getHashfromRemoteXML(final String urladdr)
+	获取远端XML放置到HashMap
+
+ParseXml：
+	public static HashMap<String, String> parseXml(InputStream inStream)
+	解析流（文件/网络）到HashMap
+
+LOGFLAG : boolean 打印标志
+i(int)
+i(String)
+i(String, int)
+i(String, boolean)
+i(String, Double)
+i(String, float)
+i(String, String)
+i(String, String, String)
+i(String, String, int)
+e(String, String)
+e(String, Exception)
+e(String, String, Exception)
+w(String, String)
+v(String, String)
+d(String, String)
+	

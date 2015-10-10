@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <declare-styleable name="virtualink">
+        <attr name="label" format="string"></attr>
+        <attr name="content" format="string"></attr>
+        <attr name="textsize" format="dimension"></attr>
+         <attr name="maxlength" format="integer"></attr>
+        <attr name="inputtype" format="integer"></attr>
+        <attr name="singleline" format="boolean"></attr>
+        <attr name="spaceenable" format="boolean"></attr>
+        <attr name="checked" format="boolean"></attr>
+        <attr name="entries" format="reference"/>  
+    	<attr name="entryvalues" format="reference" />
+    	<attr name="inputenable" format="boolean" />
+    	<attr name="hint" format="string"></attr>
+    	<attr name="backcolor" format="color"></attr>
+    	<attr name="hovercolor" format="color"></attr>
+    </declare-styleable>
+</resources>

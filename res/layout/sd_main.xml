@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:virtualink="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+     <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#000"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="#000"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+		 android:layout_above="@+id/textView2"
+        android:orientation="vertical" >
+        
+         <com.seadee.library.control.SDComboBox
+            android:id="@+id/sDComboBox1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dip"
+            virtualink:entries="@array/listarray"
+            android:text="SDComboBox" />
+        
+        <com.seadee.library.control.SDButton
+	        android:id="@+id/button1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:padding="5dip"
+	        android:onClick="show"
+	        virtualink:hint="222222222222"
+	        android:text="Button" />
+
+      
+        <com.seadee.library.control.SDProgressBar
+            android:id="@+id/SDProgressBar1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleHorizontal" />
+
+        <com.seadee.library.control.SDInputText
+            android:id="@+id/sDInputText1"
+            android:padding="10dip"
+            android:layout_width="match_parent"
+            virtualink:label="label"
+            virtualink:textsize="20dip"
+            virtualink:hovercolor="#ECECEC"
+            virtualink:inputtype="0x00000081"
+            android:layout_height="wrap_content" >
+        </com.seadee.library.control.SDInputText>
+
+        <com.seadee.library.control.SDCheckText
+            android:id="@+id/sDCheckText1"
+            virtualink:label="label"
+            virtualink:checked="true"
+            android:padding="10dip"
+            virtualink:hovercolor="#ECECEC"
+            virtualink:entries="@array/listarray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </com.seadee.library.control.SDCheckText>
+
+        <com.seadee.library.control.SDTextText
+            android:id="@+id/sDTextText1"
+            android:padding="10dip"
+            android:background="#ccc"
+            virtualink:label="label"
+            virtualink:content="content"
+            virtualink:inputenable="false"
+            virtualink:hovercolor="#ECECEC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </com.seadee.library.control.SDTextText>
+
+       
+
+    </LinearLayout>
+
+</RelativeLayout>
